@@ -1,0 +1,25 @@
+{
+  "name": "react-dynamic-overlay",
+  "version": "1.0.0-beta.0",
+  "description": "A solution to change react layout programmatically.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "https://github.com/lsafer/react-dynamic-overlay",
+  "author": "LSafer",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "clean": "npx rimraf build",
+    "build": "yarn clean && tsc",
+    "lint": "tsc --noEmit",
+    "test": "mocha --require ts-node/register src/test/**/*.spec.ts",
+    "start": "build/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "18.0.9",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
