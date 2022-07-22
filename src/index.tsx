@@ -144,4 +144,17 @@ export class Overlay {
     }
 }
 
+/**
+ * The default overlay instance for verbose usage.
+ */
 export default new Overlay();
+
+/**
+ * An overlay instance to be used for displaying dialogs.
+ */
+export const DialogOverlay = new Overlay(components => (
+    <div style={{position: "fixed", top: "0"}}>
+        {components[0] && <style>{`html { overflow: hidden !important }`}</style>}
+        {components[components.length - 1]}
+    </div>
+));
