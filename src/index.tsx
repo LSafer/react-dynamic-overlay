@@ -51,7 +51,7 @@ export class Overlay {
             });
 
             return () => {
-                this.subscribers.splice(subscription - 1);
+                this.subscribers.splice(subscription - 1, 1);
             };
         }, []);
 
