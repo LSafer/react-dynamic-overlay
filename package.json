@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-overlay",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A solution to change react layout programmatically.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
